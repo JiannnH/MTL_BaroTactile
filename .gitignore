@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Autodesk EAGLE backups
+*.b#?
+*.s#?
+*.l#?
+*.b$?
+*.s$?
+*.l$?
+eagle.epf
+
+# SolidWorks backups / lock files
+*.SLDPRT.bak
+*.SLDASM.bak
+*.SLDDRW.bak
+~$*
+
+# Arduino / PlatformIO / ESP-IDF build output
+build/
+.pio/
+sdkconfig.old
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+
+# ---------------------------------------------------------------
+# CAD source files -- kept locally, not published.
+# The repo ships neutral STEP geometry only (see Hardware/README.md).
+# ---------------------------------------------------------------
+
+# SolidWorks native (proprietary, needs a licence to open)
+*.SLDPRT
+*.sldprt
+*.SLDASM
+*.sldasm
+*.SLDDRW
+*.slddrw
+
+# Mesh exports -- superseded by STEP, which modern slicers open directly
+*.STL
+*.stl
+
+# Third-party vendor package model (SOIC24 footprint), not our geometry.
+# Kept locally because the SolidWorks assemblies reference it.
+Hardware/Mold/SOIC24 wide.stp
